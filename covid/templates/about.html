@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="icon" type="image/x-icon" href="{% static 'images/coronacovidimg.jpg' %}">
+    <title>About Us</title>
+    {% include "includes.html" %}
+</head>
+<body>
+    {% include "navbar.html" %}
+    <div class="container pt-5 pl-5">
+        <div class="row">
+            <div class="col-sm-4 offset-3">
+                <img src="/static/images/form_image.png" class="img-fluid" href="/covid/home" style="height: 5em; width: 5em;" alt="Logo">
+            </div>
+            <div class="col-sm-3">
+                <img src="/static/images/machine_learning.png" class="img-fluid" href="/covid/home" style="height: 5em; width: 5em;" alt="Logo">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 offset-2">
+                <br>
+                <h4>First user gives yes or no choice based questions in the given form and send the data to the url.</h4>
+            </div>
+            <div class="col-sm-3 offset-1">
+                <br>
+                <h4>Then we process and retrieve the data given by the user and we use machine learning to predict result.</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container pt-5 pl-5">
+        <div class="row">
+            <div class="col-sm-4 offset-3">
+                <img src="/static/images/csv_file_icon.png" class="img-fluid" href="/covid/home" style="height: 5em; width: 5em;" alt="Logo">
+            </div>
+            <div class="col-sm-3">
+                <img src="/static/images/result_icon.png" class="img-fluid" href="/covid/home" style="height: 5em; width: 5em;" alt="Logo">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 offset-2">
+                <br>
+                <h4>With the help of csv file we can compare the data and predict the result.</h4>
+            </div>
+            <div class="col-sm-3 offset-1">
+                <br>
+                <h4>After prediction is done we display the result in the results page.</h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
